@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "availabilitySetName": {
+      "value": "availabilityset01"
+    },
+    "dnsNameforLBIP": {
+      "value": "ayaztestlb2019"
+    },
+    "VMAdminUserName":{
+      "value": "adminuser"
+    },
+    "VMAdminPassword": {
+      "value": "A123456789a!"
+    },
+    "masterVMName": {
+      "value": "masterVM"
+    },
+    "slaveVMName": {
+      "value": "slaveVM"
+    }
+  }
+}
