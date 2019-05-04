@@ -6,12 +6,9 @@ Configuration Main
         [string] $SolrConfFileUri )
 
     Import-DscResource -ModuleName PSDesiredStateConfiguration
-    Find-Module xPSDesiredStateConfiguration | Install-Module -Force
-    #Import-DscResource -ModuleName xPSDesiredStateConfiguration
-    Find-Module xNetworking | Install-Module -Force
-    #Import-DscResource -ModuleName xNetworking
-    Find-Module StorageDsc | Install-Module -Force
-    #Import-DscResource -ModuleName StorageDsc
+    Import-DscResource -ModuleName xPSDesiredStateConfiguration
+    Import-DscResource -ModuleName xNetworking
+    Import-DscResource -ModuleName StorageDsc
 
     Node $nodeName 
     {
