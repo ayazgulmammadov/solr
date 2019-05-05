@@ -12,7 +12,7 @@
       "value": "adminuser"
     },
     "VMAdminPassword": {
-      "value": "A123456789a!"
+      "value": "#{vmadminpassword}#"
     },
     "masterVMName": {
       "value": "masterVM"
